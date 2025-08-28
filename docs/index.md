@@ -5,10 +5,27 @@ Esta es una **plantilla** basada en [MkDocs](https://www.mkdocs.org/) + [Materia
 
 ---
 
-## Empezar rápido (3 pasos)
+## José Manuel Compeán Góngora 
 
-1. **Edita el nombre del sitio** en `mkdocs.yml`:
-   ```yaml
-   site_name: Documentación del Curso
-   theme:
-     name: material
+**Resumen:** 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Jordi Alessandro Reyes Martínez 
+
+**Resumen:** 
