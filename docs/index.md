@@ -28,6 +28,8 @@ Esta es una **plantilla** basada en [MkDocs](https://www.mkdocs.org/) + [Materia
 
 ## Jordi Alessandro Reyes Martínez
 
+Ingeniería mecátronica | [jordi.reyes@iberopuebla.mx](jordi.reyes@iberopuebla.mx)
+
 <img src="recursos/imgs/img_ale.jpg" alt="Foto de Jordi Alessandro Reyes Martínez" width="420">
 
 **Resumen:** Soy Alessandro Reyes, estudiante de Ingeniería Mecatrónica en la IBERO Puebla, apasionado por la ciencia, la innovación y los proyectos con impacto social. He desarrollado prototipos enfocados en inclusión y aprendizaje, como Infocélula y LumiBrain, que reflejan mi interés por combinar la tecnología con soluciones que transformen la vida de las personas.
