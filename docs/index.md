@@ -8,6 +8,14 @@ Esta es una **plantilla** basada en [MkDocs](https://www.mkdocs.org/) + [Materia
 ## José Manuel Compeán Góngora 
 
 **Resumen:** 
+**Resumen:** 
+![Jose Manue](./yo.jpeg) 
+
+Soy **José Manuel**, estudiante de **Ingeniería Mecatrónica**, apasionado por la tecnología, la programación y los sistemas electrónicos. Me gusta aprender de manera práctica, aplicando conceptos matemáticos y técnicos a situaciones reales. Tengo un fuerte interés en el **emprendimiento**, con ideas de proyectos que van desde franquicias hasta gimnasios y estudios de pilates, siempre buscando innovar y crear experiencias con impacto.
+
+En lo personal me considero una persona **cercana, expresiva y curiosa**, con gusto por aprender de los demás y mejorar continuamente. Trato de mantener un equilibrio entre lo académico y mi vida diaria, siendo empático con quienes me rodean y trabajando en crecer también en el plano emocional.
+
+Además, el **deporte y la actividad física** son parte importante de mi vida, ya que me aportan disciplina y claridad mental. Me gusta combinar esto con otros intereses como la **música**, especialmente artistas como **Bad Bunny**, que me inspiran y me acompañan en mi día a día. Estos aspectos reflejan mi forma de ser: un joven que busca crecer académica y personalmente, mientras disfruta de lo que le apasiona.
 
 
 
