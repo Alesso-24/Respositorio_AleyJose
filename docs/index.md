@@ -1,7 +1,5 @@
 # Documentación del Proyecto
-
 ---
-
 ## José Manuel Compeán Góngora 
 
 **Resumen:** 
