@@ -10,7 +10,7 @@ Esta es una **plantilla** basada en [MkDocs](https://www.mkdocs.org/) + [Materia
 **Resumen:** 
 Ingeniería mecátronica | [203609@iberopuebla.mx](203609@iberopuebla.mx)
 
-<img src="recursos/imgs/COMPEAN IMAGEN.jpeg" alt="COMPEAN IMAGEN" width="200">
+<img src="/docs/recursos/imgs/COMPEAN IMAGEN.jpeg" alt="COMPEAN IMAGEN" width="200">
 
 
 Soy **José Manuel**, estudiante de **Ingeniería Mecatrónica**, apasionado por la tecnología, la programación y los sistemas electrónicos. Me gusta aprender de manera práctica, aplicando conceptos matemáticos y técnicos a situaciones reales. Tengo un fuerte interés en el **emprendimiento**, con ideas de proyectos que van desde franquicias hasta gimnasios y estudios de pilates, siempre buscando innovar y crear experiencias con impacto.
