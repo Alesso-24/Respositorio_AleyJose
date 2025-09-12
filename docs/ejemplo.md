@@ -68,25 +68,8 @@
 1. **Armar el circuito** según el diagrama:  
    ![Diagrama 555](./6b6515ed-f736-4f62-9028-4dc57124b880.png)  
 
-2. **Cálculos teóricos:**  
-
-   - Tiempo alto:  
-     \[
-     T_h = 0.693 \times (R1 + R2) \times C1
-     \]  
-     ≈ 4802 ms  
-
-   - Tiempo bajo:  
-     \[
-     T_l = 0.693 \times R2 \times C1
-     \]  
-     ≈ 4574 ms  
-
-   - Frecuencia:  
-     \[
-     f = \frac{1.44}{(R1 + 2R2) \times C1}
-     \]  
-     ≈ 0.106 Hz  
+2. **Cálculos teóricos (imagen):**  
+   ![Cálculos 555](./ruta/imagen_calculos.png)  
 
 3. **Observación práctica:** El LED permanece encendido ~4.8 s y apagado ~4.6 s, cumpliendo con el requisito (3–5 s).  
 
