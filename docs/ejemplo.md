@@ -66,11 +66,11 @@
 ### 5) Procedimiento e Instalación
 
 1. **Armar el circuito según el diagrama:**  
-<img src="recursos/imgs/practicas/555_astable/Circuito.png" alt="Diagrama 555" width="500">
+<img src="../recursos/imgs/practicas/555_astable/Circuito.png" alt="Diagrama 555" width="500">
 <p><em>Figura 1. Diagrama del temporizador 555 en modo astable</em></p>
 
 2. **Cálculos teóricos:**  
-<img src="recursos/imgs/practicas/555_astable/Calculos.png" alt="Cálculos 555" width="500">
+<img src="../recursos/imgs/practicas/555_astable/Calculos.png" alt="Cálculos 555" width="500">
 <p><em>Figura 2. Cálculos teóricos del circuito</em></p>
 
 3. **Observación práctica:** El LED permanece encendido ~4.8 s y apagado ~4.6 s, cumpliendo con el requisito (3–5 s).
@@ -85,10 +85,10 @@
 
 **Fotos del montaje físico:**
 
-<img src="recursos/imgs/practicas/555_astable/armado_1.png" alt="Foto montaje 1" width="300">
+<img src="../recursos/imgs/practicas/555_astable/armado_1.png" alt="Foto montaje 1" width="300">
 <p><em>Figura 3. Montaje físico – Vista 1</em></p>
 
-<img src="recursos/imgs/practicas/555_astable/armado_2.png" alt="Foto montaje 2" width="300">
+<img src="../recursos/imgs/practicas/555_astable/armado_2.png" alt="Foto montaje 2" width="300">
 <p><em>Figura 4. Montaje físico – Vista 2</em></p>
 
 ---
