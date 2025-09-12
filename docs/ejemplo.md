@@ -5,7 +5,7 @@
 
 ---
 
-## 1) Resumenn
+## 1) Resumen
 
 - **Nombre del proyecto:** Oscilador Astable con 555  
 - **Equipo / Autor(es):** Alessandro Reyes, Jose Góngora, Sebastián Cortez  
