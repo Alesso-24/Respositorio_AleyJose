@@ -66,11 +66,11 @@
 ## 5) Procedimiento e Instalación
 
 1. **Armar el circuito** según el diagrama:  
-   ![Diagrama 555](./6b6515ed-f736-4f62-9028-4dc57124b880.png)  
+   ![Diagrama 555](recursos/imgs/practicas/555_astable/Circuito.png)  
 
 2. **Cálculos teóricos (imagen):**  
-   ![Cálculos 555](./ruta/imagen_calculos.png)  
-
+   ![Cálculos 555](recursos/imgs/practicas/555_astable/Calculos.png)  
+on
 3. **Observación práctica:** El LED permanece encendido ~4.8 s y apagado ~4.6 s, cumpliendo con el requisito (3–5 s).  
 
 ---
@@ -82,7 +82,12 @@
 - ✅ El 555 demostró ser un generador confiable de pulsos de baja frecuencia.  
 
 📸 **Fotos del montaje físico:**  
-_(inserta aquí las imágenes con)_  
-```markdown
-![Foto montaje 1](./ruta/foto1.jpg)
-![Foto montaje 2](./ruta/foto2.jpg)
+![Foto montaje 1](recursos/imgs/practicas/555_astable/armado_1.png)
+![Foto montaje 2](recursos/imgs/practicas/555_astable/armado_2.png)
+
+
+## 6) Video de funcionamiento
+
+<iframe src="https://iberopuebla-my.sharepoint.com/personal/203032_iberopuebla_mx/_layouts/15/embed.aspx?UniqueId=e8c189ab-aa52-465a-aa4a-13fa0318dfe7&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" 
+        width="800" height="450" frameborder="0" scrolling="no" allowfullscreen 
+        title="555_astable_led.mp4"></iframe>
