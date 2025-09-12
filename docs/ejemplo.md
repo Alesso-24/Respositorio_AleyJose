@@ -20,9 +20,9 @@
 
 ## 2) Objetivos
 
-- **General:** Implementar un circuito oscilador astable con el CI 555 para controlar el parpadeo de un LED.  
+**General:** Implementar un circuito oscilador astable con el CI 555 para controlar el parpadeo de un LED.  
 
-- **Específicos:**
+**Específicos:**
   - Diseñar el circuito con valores adecuados de resistencias y capacitores.  
   - Calcular teóricamente los tiempos alto y bajo de la señal.  
   - Verificar en la práctica el correcto parpadeo del LED.  
@@ -32,13 +32,13 @@
 
 ## 3) Alcance y Exclusiones
 
-- **Incluye:**  
+**Incluye:**  
   - Implementación en protoboard del 555 en modo astable.  
   - LED parpadeando con periodo de 3–5 segundos.  
   - Documentación de cálculos y resultados.  
   - Evidencia en fotos y video.  
 
-- **No incluye:**  
+**No incluye:**  
   - Diseño de PCB.  
   - Simulación en software especializado.  
   - Implementación con microcontroladores.  
