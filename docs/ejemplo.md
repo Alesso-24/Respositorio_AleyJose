@@ -63,7 +63,7 @@
 
 ---
 
-### 5) Procedimiento e Instalación
+## 5) Procedimiento e Instalación
 
 1. **Armar el circuito según el diagrama:**  
 <img src="../recursos/imgs/practicas/555_astable/Circuito.png" alt="Diagrama 555" width="500">
@@ -77,7 +77,7 @@
 
 ---
 
-### 6) Resultados
+## 6) Resultados
 
 - ✅ LED parpadea dentro del rango esperado (aprox. 9.3 s de periodo total).  
 - ✅ El comportamiento práctico coincide con las fórmulas.  
