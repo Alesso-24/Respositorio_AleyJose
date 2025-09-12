@@ -65,12 +65,18 @@
 
 ## 5) Procedimiento e Instalación
 
-1. **Armar el circuito** según el diagrama:  
-   ![Diagrama 555](recursos/imgs/practicas/555_astable/Circuito.png)  
+1. **Armar el circuito según el diagrama:**  
+   <div align="center">
+   <img src="recursos/imgs/practicas/555_astable/Circuito.png" alt="Diagrama 555" width="500">
+   <p><em>Figura 1. Diagrama del temporizador 555 en modo astable</em></p>
+   </div>
 
-2. **Cálculos teóricos (imagen):**  
-   ![Cálculos 555](recursos/imgs/practicas/555_astable/Calculos.png)  
-on
+2. **Cálculos teóricos:**  
+   <div align="center">
+   <img src="recursos/imgs/practicas/555_astable/Calculos.png" alt="Cálculos 555" width="500">
+   <p><em>Figura 2. Cálculos teóricos del circuito</em></p>
+   </div>
+
 3. **Observación práctica:** El LED permanece encendido ~4.8 s y apagado ~4.6 s, cumpliendo con el requisito (3–5 s).  
 
 ---
@@ -81,13 +87,27 @@ on
 - ✅ El comportamiento práctico coincide con las fórmulas.  
 - ✅ El 555 demostró ser un generador confiable de pulsos de baja frecuencia.  
 
-📸 **Fotos del montaje físico:**  
-![Foto montaje 1](recursos/imgs/practicas/555_astable/armado_1.png)
-![Foto montaje 2](recursos/imgs/practicas/555_astable/armado_2.png)
+### Fotos del montaje físico
 
+<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+  <div align="center">
+    <img src="recursos/imgs/practicas/555_astable/armado_1.png" alt="Foto montaje 1" width="300">
+    <p><em>Montaje físico – Vista 1</em></p>
+  </div>
+  <div align="center">
+    <img src="recursos/imgs/practicas/555_astable/armado_2.png" alt="Foto montaje 2" width="300">
+    <p><em>Montaje físico – Vista 2</em></p>
+  </div>
+</div>
 
-## 6) Video de funcionamiento
+---
 
+## 7) Video de funcionamiento
+
+<div align="center">
 <iframe src="https://iberopuebla-my.sharepoint.com/personal/203032_iberopuebla_mx/_layouts/15/embed.aspx?UniqueId=e8c189ab-aa52-465a-aa4a-13fa0318dfe7&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" 
         width="800" height="450" frameborder="0" scrolling="no" allowfullscreen 
         title="555_astable_led.mp4"></iframe>
+<p><em>Figura 3. Video del LED parpadeando</em></p>
+<p>🔗 <a href="https://iberopuebla-my.sharepoint.com/:v:/g/personal/203032_iberopuebla_mx/EauJwehSqlpGqkoT-gMY3-cBpmpjnn-NBrabArAr7KmixnDw?e=U3kxCP">Ver video en OneDrive</a></p>
+</div>
