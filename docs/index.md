@@ -1,4 +1,4 @@
-# Documentación del Proyecto
+# Ingeniería Mecatrónica - Documentación
 ---
 ## José Manuel Compeán Góngora 
 
