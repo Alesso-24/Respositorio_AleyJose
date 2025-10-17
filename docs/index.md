@@ -3,7 +3,7 @@
 ## José Manuel Compeán Góngora 
 
 **Resumen:** 
-Ingeniería mecátronica | [203609@iberopuebla.mx](203609@iberopuebla.mx)
+Ingeniería Mecatrónica | [203609@iberopuebla.mx](203609@iberopuebla.mx)
 
 <img src="recursos/imgs/COMPEAN_IMAGEN.jpeg" alt="Foto de Compean" width="200">
 
@@ -17,7 +17,7 @@ El deporte y la actividad física son parte importante de mi vida porque me apor
 
 ## Jordi Alessandro Reyes Martínez
 
-Ingeniería mecátronica | [jordi.reyes@iberopuebla.mx](jordi.reyes@iberopuebla.mx)
+Ingeniería Mecatrónica | [jordi.reyes@iberopuebla.mx](jordi.reyes@iberopuebla.mx)
 
 <img src="recursos/imgs/img_ale.jpg" alt="Foto de Jordi Alessandro Reyes Martínez" width="200">
 
