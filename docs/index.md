@@ -8,11 +8,11 @@ Ingeniería mecátronica | [203609@iberopuebla.mx](203609@iberopuebla.mx)
 <img src="recursos/imgs/COMPEAN_IMAGEN.jpeg" alt="Foto de Compean" width="200">
 
 
-Soy **José Manuel**, estudiante de **Ingeniería Mecatrónica**, apasionado por la tecnología, la programación y los sistemas electrónicos. Me gusta aprender de manera práctica, aplicando conceptos matemáticos y técnicos a situaciones reales. Tengo un fuerte interés en el **emprendimiento**, con ideas de proyectos que van desde franquicias hasta gimnasios y estudios de pilates, siempre buscando innovar y crear experiencias con impacto.
+Soy **José Manuel**, estudiante de **Ingeniería Mecatrónica**, apasionado por la tecnología, la programación y los sistemas electrónicos. Aprendo de manera práctica, aplicando conceptos matemáticos y técnicos a situaciones reales. He cursado Electrónica Analógica y Sistemas Digitales, y mi enfoque actual está en robótica, donde disfruto integrar sensado, control y actuadores con microcontroladores y lógica digital.
 
-En lo personal me considero una persona **cercana, expresiva y curiosa**, con gusto por aprender de los demás y mejorar continuamente. Trato de mantener un equilibrio entre lo académico y mi vida diaria, siendo empático con quienes me rodean y trabajando en crecer también en el plano emocional.
+Me considero una **persona cercana, expresiva y curiosa**, con gusto por aprender de los demás y mejorar continuamente. Busco equilibrar lo académico con mi vida diaria, siendo empático con quienes me rodean y creciendo también en lo emocional.
 
-Además, el **deporte y la actividad física** son parte importante de mi vida, ya que me aportan disciplina y claridad mental. Me gusta combinar esto con otros intereses como la **música**, especialmente artistas como **Bad Bunny**, que me inspiran y me acompañan en mi día a día. Estos aspectos reflejan mi forma de ser: un joven que busca crecer académica y personalmente, mientras disfruta de lo que le apasiona.
+El deporte y la actividad física son parte importante de mi vida porque me aportan disciplina y claridad mental. Sobre todo, me motiva seguir aprendiendo electrónica: desde el análisis de circuitos y el diseño de PCBs hasta la integración de hardware y software para resolver problemas reales.
 
 
 ## Jordi Alessandro Reyes Martínez
