@@ -206,18 +206,18 @@ void loop() {
 
 ## 🎥 7) Videos de Funcionamiento
 
-### ▶️ Video 1 – Control de Dirección y Velocidad Fija
+### ▶️ Video 1 – Aprendiendo a usar un motor
 
 <div align="center">
-  <iframe src="[ENLACE_VIDEO_DIRECCION]" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="video_direccion.mp4"></iframe>
-  <p><em>Video 1. Demostración de cambio de sentido de giro (adelante/atrás) y velocidad constante.</em></p>
-  <p>🔗 <a href="[ENLACE_VIDEO_DIRECCION]">Ver video</a></p>
+  <iframe src="https://iberopuebla-my.sharepoint.com/personal/203032_iberopuebla_mx/_layouts/15/embed.aspx?UniqueId=1f14984d-9644-4f31-82d3-270bf94e850e&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="motor_1.mp4"></iframe>
+  <p><em>Video 1. Aprendiendo a usar un motor DC.</em></p>
+  <p>🔗 <a href="https://iberopuebla-my.sharepoint.com/:v:/g/personal/203032_iberopuebla_mx/EU2YFB9EljFPgtMnC_lOhQ4BJORseFZcSpRQcb3aITU0og?e=jDeAxC&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">Ver video</a></p>
 </div>
 
 ### ▶️ Video 2 – Secuencia de Aceleración y Desaceleración
 
 <div align="center">
-  <iframe src="[ENLACE_VIDEO_VELOCIDAD]" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="video_velocidad.mp4"></iframe>
+  <iframe src="https://iberopuebla-my.sharepoint.com/personal/203032_iberopuebla_mx/_layouts/15/embed.aspx?UniqueId=a40bd434-ffd9-49bb-b802-1c7b38d05265&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="motor_aumento_disminucion.mp4"></iframe>
   <p><em>Video 2. Observación de la aceleración a velocidad máxima y el frenado progresivo con el ciclo 'for'.</em></p>
-  <p>🔗 <a href="[ENLACE_VIDEO_VELOCIDAD]">Ver video</a></p>
+  <p>🔗 <a href="https://iberopuebla-my.sharepoint.com/:v:/g/personal/203032_iberopuebla_mx/ETTUC6TZ_7tJuAIcezjQUmUB7DQc6xwFXwyhb8DLkVwr-Q?e=gUG3TL&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">Ver video</a></p>
 </div>
