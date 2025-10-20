@@ -92,8 +92,6 @@ Aplicar los conceptos básicos de programación de microcontroladores para contr
 ### 🔹 **Etapa 1 – LED Parpadeante Simple (Blink) ⏳**
 
 > El LED se enciende y apaga cada segundo.
-
-```cpp
 /***********************************************************************
  *  LED Blink – ESP32
  *  Descripción: Enciende y apaga el LED cada 1 segundo.
@@ -113,8 +111,6 @@ void loop() {
 🔹 Etapa 2 – Control del LED con Botón 🔘
 El LED se enciende mientras el botón está siendo presionado.
 
-cpp
-Copiar código
 /***********************************************************************
  *  LED + Botón – ESP32
  *  Descripción: El LED replica el estado del botón (GPIO 4).
@@ -135,8 +131,6 @@ void loop() {
 🔹 Etapa 3 – Control del LED por Bluetooth Serial 📲
 El LED se controla enviando el texto HIGH o LOW desde una app Bluetooth.
 
-cpp
-Copiar código
 /***********************************************************************
  *  LED + Bluetooth Serial – ESP32
  *  Descripción: Control remoto del LED mediante comandos Bluetooth.
@@ -186,6 +180,8 @@ void loop() {
   }
   delay(20);
 }
+
+
 📊 6) Resultados
 Etapa	Descripción	Resultado
 1️⃣ Blink	Control temporizado del LED	✅ Precisión de 2 s por ciclo
