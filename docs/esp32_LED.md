@@ -216,7 +216,7 @@ void loop() {
 ### ▶️ Video 3 – Control de LED por Bluetooth
 
 <div align="center">
-  <iframe src="[ENLACE_DE_INSERCIÓN_VIDEO_3]" width="800" height="450" frameborder="0" allowfullscreen title="ESP32 LED Bluetooth Control"></iframe>
+  <iframe src="https://iberopuebla-my.sharepoint.com/:v:/g/personal/203032_iberopuebla_mx/EVpBvpzdxWZOh_eSXIGTQ-YB0Rgq_y67O0ogH8LVx4Zd5Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=NytuGt" width="800" height="450" frameborder="0" allowfullscreen title="ESP32 LED Bluetooth Control"></iframe>
   <p><em>Video 3. Control remoto del LED enviando HIGH/LOW vía Bluetooth.</em></p>
-  <p>🔗 <a href="[ENLACE_DE_TU_VIDEO_3]">Ver video</a></p>
+  <p>🔗 <a href="https://iberopuebla-my.sharepoint.com/:v:/g/personal/203032_iberopuebla_mx/EVpBvpzdxWZOh_eSXIGTQ-YB0Rgq_y67O0ogH8LVx4Zd5Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=S0CvNi">Ver video</a></p>
 </div>
