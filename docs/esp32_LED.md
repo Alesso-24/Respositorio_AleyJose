@@ -10,9 +10,9 @@
 | **Elemento** | **Descripción** |
 |---------------|----------------|
 | **Nombre del proyecto:** | LED Multi-Control con ESP32 (Blink, Botón y Bluetooth) |
-| **Equipo / Autor(es):** | [Tus Nombres] |
+| **Equipo / Autor(es):** | Alessandro Reyes, José Compeán |
 | **Curso / Asignatura:** | Introducción a la Mecatrónica / Programación de Microcontroladores |
-| **Fecha:** | [Fecha de la práctica] |
+| **Fecha:** | 12 sep 2025 |
 | **Descripción breve:** | Se exploraron las funcionalidades básicas de la **ESP32** (GPIOs, temporización, lectura de entradas y comunicación inalámbrica) implementando tres programas que controlan un LED: parpadeo constante, encendido por pulsación de botón y control remoto por comandos de texto vía Bluetooth. |
 
 > 💡 **Consejo:**  
