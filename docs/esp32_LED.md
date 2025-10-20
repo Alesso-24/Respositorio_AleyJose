@@ -193,10 +193,14 @@ void loop() {
 🔍 Se demostró la capacidad de la ESP32 para manejar tareas de temporización, entradas digitales y comunicación inalámbrica mediante Bluetooth.
 
 <p align="center"> <img src="../recursos/imgs/practicas/esp32_led/armado_1.png" alt="Montaje físico ESP32 con LED y Botón" width="300"> <br><em>Figura 2. Montaje físico – Vista general con ESP32, LED y botón</em> </p> <p align="center"> <img src="../recursos/imgs/practicas/esp32_led/app_bluetooth.png" alt="App Bluetooth Serial" width="300"> <br><em>Figura 3. Captura de la app Bluetooth Serial</em> </p>
+
+
 🎥 7) Videos de Funcionamiento
 ▶️ Video 1 – Control Simple de LED (Blink)
 <div align="center"> <iframe src="[ENLACE_DE_TU_VIDEO_1]" width="800" height="450" frameborder="0" allowfullscreen></iframe> <p><em>Video 1. LED parpadeando con tiempos fijos.</em></p> <p>🔗 <a href="[ENLACE_DE_TU_VIDEO_1]">Ver video</a></p> </div>
+
 ▶️ Video 2 – Control de LED con Botón
-<div align="center"> <iframe src="[ENLACE_DE_TU_VIDEO_2]" width="800" height="450" frameborder="0" allowfullscreen></iframe> <p><em>Video 2. El LED se enciende solo mientras se mantiene presionado el botón.</em></p> <p>🔗 <a href="[ENLACE_DE_TU_VIDEO_2]">Ver video</a></p> </div>
+<div align="center"> <iframe src="[ENLACE_DE_TU_VIDEO_2]" width="800" height="450" frameborder="0" allowfullscreen></iframe> <p><em>Video 2. El LED se enciende solo mientras se mantiene presionado el botón.</em></p> <p>🔗 <a href="[https://iberopuebla-my.sharepoint.com/:v:/g/personal/203032_iberopuebla_mx/ERWmPiyVnxNMvEmRAj5t7SkBpnEQD-Hnukl8A-_YR8_dPA?e=HrgReR&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D]">Ver video</a></p> </div>
+
 ▶️ Video 3 – Control de LED por Bluetooth
 <div align="center"> <iframe src="[ENLACE_DE_TU_VIDEO_3]" width="800" height="450" frameborder="0" allowfullscreen></iframe> <p><em>Video 3. Control remoto del LED enviando HIGH/LOW vía Bluetooth.</em></p> <p>🔗 <a href="[ENLACE_DE_TU_VIDEO_3]">Ver video</a></p> </div>
