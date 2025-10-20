@@ -80,11 +80,6 @@ Aplicar los conceptos básicos de programación de microcontroladores para contr
    - Etapa 2: Verificar el encendido solo al presionar el botón.  
    - Etapa 3: Emparejar por Bluetooth y enviar comandos `HIGH` / `LOW`.
 
-<p align="center">
-  <img src="../recursos/imgs/practicas/esp32_led/esquematico_base.png" alt="Esquema de conexión base ESP32 LED y Botón" width="600">
-  <br><em>Figura 1. Esquema de conexión base del LED (GPIO 2) y Botón (GPIO 4) a la ESP32</em>
-</p>
-
 ---
 
 ## 💻 **5.1) Código de Programación**
