@@ -192,9 +192,6 @@ if (SerialBT.available()) {
 
 🔍 Se demostró la capacidad de la ESP32 para manejar tareas de temporización, entradas digitales y comunicación inalámbrica mediante Bluetooth.
 
-<p align="center"> <img src="../recursos/imgs/practicas/esp32_led/armado_1.png" alt="Montaje físico ESP32 con LED y Botón" width="300"> <br><em>Figura 2. Montaje físico – Vista general con ESP32, LED y botón</em> </p> <p align="center"> <img src="../recursos/imgs/practicas/esp32_led/app_bluetooth.png" alt="App Bluetooth Serial" width="300"> <br><em>Figura 3. Captura de la app Bluetooth Serial</em> </p>
-
-
 ## 🎥 7) Videos de Funcionamiento
 
 ### ▶️ Video 1 – Control de LED con Botón
