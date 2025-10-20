@@ -195,12 +195,28 @@ void loop() {
 <p align="center"> <img src="../recursos/imgs/practicas/esp32_led/armado_1.png" alt="Montaje físico ESP32 con LED y Botón" width="300"> <br><em>Figura 2. Montaje físico – Vista general con ESP32, LED y botón</em> </p> <p align="center"> <img src="../recursos/imgs/practicas/esp32_led/app_bluetooth.png" alt="App Bluetooth Serial" width="300"> <br><em>Figura 3. Captura de la app Bluetooth Serial</em> </p>
 
 
-🎥 7) Videos de Funcionamiento
-▶️ Video 1 – Control Simple de LED (Blink)
-<div align="center"> <iframe src="[ENLACE_DE_TU_VIDEO_1]" width="800" height="450" frameborder="0" allowfullscreen></iframe> <p><em>Video 1. LED parpadeando con tiempos fijos.</em></p> <p>🔗 <a href="[ENLACE_DE_TU_VIDEO_1]">Ver video</a></p> </div>
+## 🎥 7) Videos de Funcionamiento
 
-▶️ Video 2 – Control de LED con Botón
-<div align="center"> <iframe src="[ENLACE_DE_TU_VIDEO_2]" width="800" height="450" frameborder="0" allowfullscreen></iframe> <p><em>Video 2. El LED se enciende solo mientras se mantiene presionado el botón.</em></p> <p>🔗 <a href="[https://iberopuebla-my.sharepoint.com/:v:/g/personal/203032_iberopuebla_mx/ERWmPiyVnxNMvEmRAj5t7SkBpnEQD-Hnukl8A-_YR8_dPA?e=HrgReR&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D]">Ver video</a></p> </div>
+### ▶️ Video 1 – Control Simple de LED (Blink)
 
-▶️ Video 3 – Control de LED por Bluetooth
-<div align="center"> <iframe src="[ENLACE_DE_TU_VIDEO_3]" width="800" height="450" frameborder="0" allowfullscreen></iframe> <p><em>Video 3. Control remoto del LED enviando HIGH/LOW vía Bluetooth.</em></p> <p>🔗 <a href="[ENLACE_DE_TU_VIDEO_3]">Ver video</a></p> </div>
+<div align="center">
+  <iframe src="[ENLACE_DE_INSERCIÓN_VIDEO_1]" width="800" height="450" frameborder="0" allowfullscreen title="ESP32 LED Blink"></iframe>
+  <p><em>Video 1. LED parpadeando con tiempos fijos.</em></p>
+  <p>🔗 <a href="[ENLACE_DE_TU_VIDEO_1]">Ver video</a></p>
+</div>
+
+### ▶️ Video 2 – Control de LED con Botón
+
+<div align="center">
+  <iframe src="https://iberopuebla-my.sharepoint.com/personal/203032_iberopuebla_mx/_layouts/15/embed.aspx?UniqueId=2c3ea615-9f95-4c13-bc49-91023e6ded29&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="led_boton_12sep.mp4"></iframe>
+  <p><em>Video 2. El LED se enciende solo mientras se mantiene presionado el botón.</em></p>
+  <p>🔗 <a href="https://iberopuebla-my.sharepoint.com/:v:/g/personal/203032_iberopuebla_mx/ERWmPiyVnxNMvEmRAj5t7SkBkaetLvNKJOJUUT47aW5Qow?e=D6GW7v">Ver video</a></p>
+</div>
+
+### ▶️ Video 3 – Control de LED por Bluetooth
+
+<div align="center">
+  <iframe src="[ENLACE_DE_INSERCIÓN_VIDEO_3]" width="800" height="450" frameborder="0" allowfullscreen title="ESP32 LED Bluetooth Control"></iframe>
+  <p><em>Video 3. Control remoto del LED enviando HIGH/LOW vía Bluetooth.</em></p>
+  <p>🔗 <a href="[ENLACE_DE_TU_VIDEO_3]">Ver video</a></p>
+</div>
