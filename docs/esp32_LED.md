@@ -1,4 +1,4 @@
-# 💡 **Documentación de la Práctica – Control de LED con ESP32 (Múltiples Modos)**
+# 📚 **Documentación de la Práctica – Control de LED con ESP32 (Múltiples Modos)**
 
 > 🧠 *Proyecto académico de introducción a la mecatrónica:*  
 > Implementación de la placa **ESP32** para el control de un LED en tres modos distintos: temporizado, mediante interacción física (botón) y por comunicación inalámbrica (**Bluetooth Serial**).

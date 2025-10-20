@@ -1,4 +1,4 @@
-# 💡 Documentación de la Práctica – Control de Motor DC con ESP32 (PWM y Puente H)
+# 📚 Documentación de la Práctica – Control de Motor DC con ESP32 (PWM y Puente H)
 
 ## 🧠 Proyecto académico de introducción a la mecatrónica
 **Implementación de la placa ESP32 para el control de la dirección y velocidad de un motor DC utilizando el controlador L298N.**
