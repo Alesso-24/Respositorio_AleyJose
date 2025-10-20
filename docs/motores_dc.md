@@ -81,11 +81,6 @@ Aplicar los conceptos de modulación por ancho de pulso (PWM) y el manejo de pue
 ### **Carga secuencial de Código**
 Cargar cada uno de los tres códigos de forma individual para verificar la funcionalidad (dirección, velocidad fija y aceleración/desaceleración).
 
-<p align="center">
-  <img src="../recursos/imgs/practicas/esp32_l298n/esquematico_motor.png" alt="Esquema de conexión ESP32 con L298N y un motor DC" width="600">
-  <br><em>Figura 1. Esquema de conexión base de la ESP32 con el módulo L298N y un motor DC.</em>
-</p>
-
 ---
 
 ## 💻 5.1) Código de Programación
@@ -122,3 +117,83 @@ void loop() {
   digitalWrite(IN2, LOW);
   delay(1000);
 }
+
+Etapa 2 – Control de Velocidad Fija con PWM (50%) ⚡
+// Parámetros PWM de la ESP32
+const int freq = 5000;      // Frecuencia PWM (5 kHz)
+const int ledChannel = 0;   // Canal PWM a usar (0-15)
+const int resolution = 8;   // Resolución de 8 bits (0-255)
+const int dutyCycle = 127;  // 50% de velocidad (127 de 255)
+
+// Pines de control
+const int IN1 = 25; // Dirección 1
+const int IN2 = 26; // Dirección 2
+const int ENA = 27; // Habilitación/Velocidad (PWM)
+
+void setup() {
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+
+  ledcSetup(ledChannel, freq, resolution);
+  ledcAttachPin(ENA, ledChannel);
+}
+
+void loop() {
+  // 1. Gira Adelante a 50% de velocidad
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
+  ledcWrite(ledChannel, dutyCycle);
+  delay(4000);
+
+  // Detener el motor
+  ledcWrite(ledChannel, 0);
+  delay(1000);
+}
+
+🔹 Etapa 3 – Secuencia de Aceleración y Desaceleración Gradual ⬆️⬇️
+// Pines y parámetros PWM
+const int IN1 = 25;
+const int IN2 = 26;
+const int ENA = 27;
+const int ledChannel = 0;
+const int freq = 5000;
+const int resolution = 8; // Max dutyCycle = 255
+
+void setup() {
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+  ledcSetup(ledChannel, freq, resolution);
+  ledcAttachPin(ENA, ledChannel);
+
+  // Establecer una dirección fija (Adelante)
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
+}
+
+void loop() {
+  // 1. Acelera rápidamente a velocidad máxima (100%)
+  ledcWrite(ledChannel, 255);
+  delay(3000);
+
+  // 2. Desaceleración gradual (100% a 0)
+  for (int dutyCycle = 255; dutyCycle >= 0; dutyCycle -= 5) {
+    ledcWrite(ledChannel, dutyCycle);
+    delay(50);
+  }
+
+  delay(4000); // Motor detenido por 4s antes de repetir
+}
+
+📊 6) Resultados
+Etapa	Descripción	Resultado
+1️⃣ Dirección	Control del sentido de giro (adelante/atrás)	✅ Reversibilidad lograda
+2️⃣ Velocidad Fija	Control de velocidad con PWM	✅ Velocidad estable al 50%
+3️⃣ Acel./Desac.	Secuencia de máxima velocidad seguida de desaceleración gradual	✅ Transición de velocidad controlada
+
+🔍 Se demostró el control total sobre la potencia (velocidad) y el sentido de giro (dirección) de un motor DC, validando el uso del módulo L298N como interfaz de potencia.
+
+🎥 7) Videos de Funcionamiento
+▶️ Video 1 – Control de Dirección y Velocidad Fija
+<div align="center"> <iframe src="[ENLACE_VIDEO_DIRECCION]" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="video_direccion.mp4"></iframe> <p><em>Video 1. Demostración de cambio de sentido de giro (adelante/atrás) y velocidad constante.</em></p> <p>🔗 <a href="[ENLACE_VIDEO_DIRECCION]">Ver video</a></p> </div>
+▶️ Video 2 – Secuencia de Aceleración y Desaceleración
+<div align="center"> <iframe src="[ENLACE_VIDEO_VELOCIDAD]" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="video_velocidad.mp4"></iframe> <p><em>Video 2. Observación de la aceleración a velocidad máxima y el frenado progresivo con el ciclo 'for'.</em></p> <p>🔗 <a href="[ENLACE_VIDEO_VELOCIDAD]">Ver video</a></p> </div> ```
