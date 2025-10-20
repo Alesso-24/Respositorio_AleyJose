@@ -111,10 +111,9 @@ void loop() {
 🔹 Etapa 2 – Control del LED con Botón 🔘
 El LED se enciende mientras el botón está siendo presionado.
 
-/***********************************************************************
- *  LED + Botón – ESP32
- *  Descripción: El LED replica el estado del botón (GPIO 4).
- ***********************************************************************/
+```markdown
+```cpp
+// Definición de pines
 const int ledPin = 2;    // LED en GPIO 2
 const int buttonPin = 4; // Botón en GPIO 4
 
@@ -128,6 +127,9 @@ void loop() {
   digitalWrite(ledPin, buttonState);
   delay(10); // Anti-rebote simple
 }
+
+
+
 🔹 Etapa 3 – Control del LED por Bluetooth Serial 📲
 El LED se controla enviando el texto HIGH o LOW desde una app Bluetooth.
 
