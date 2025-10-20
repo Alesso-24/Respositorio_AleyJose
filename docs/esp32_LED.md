@@ -197,26 +197,18 @@ void loop() {
 
 ## 🎥 7) Videos de Funcionamiento
 
-### ▶️ Video 1 – Control Simple de LED (Blink)
-
-<div align="center">
-  <iframe src="[ENLACE_DE_INSERCIÓN_VIDEO_1]" width="800" height="450" frameborder="0" allowfullscreen title="ESP32 LED Blink"></iframe>
-  <p><em>Video 1. LED parpadeando con tiempos fijos.</em></p>
-  <p>🔗 <a href="[ENLACE_DE_TU_VIDEO_1]">Ver video</a></p>
-</div>
-
-### ▶️ Video 2 – Control de LED con Botón
+### ▶️ Video 1 – Control de LED con Botón
 
 <div align="center">
   <iframe src="https://iberopuebla-my.sharepoint.com/personal/203032_iberopuebla_mx/_layouts/15/embed.aspx?UniqueId=2c3ea615-9f95-4c13-bc49-91023e6ded29&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="led_boton_12sep.mp4"></iframe>
-  <p><em>Video 2. El LED se enciende solo mientras se mantiene presionado el botón.</em></p>
+  <p><em>Video 1. El LED se enciende solo mientras se mantiene presionado el botón.</em></p>
   <p>🔗 <a href="https://iberopuebla-my.sharepoint.com/:v:/g/personal/203032_iberopuebla_mx/ERWmPiyVnxNMvEmRAj5t7SkBkaetLvNKJOJUUT47aW5Qow?e=D6GW7v">Ver video</a></p>
 </div>
 
-### ▶️ Video 3 – Control de LED por Bluetooth
+### ▶️ Video 2 – Control de LED por Bluetooth
 
 <div align="center">
   <iframe src="https://iberopuebla-my.sharepoint.com/personal/203032_iberopuebla_mx/_layouts/15/embed.aspx?UniqueId=9cbe415a-c5dd-4e66-87f7-925c819343e6&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="app.mp4"></iframe>
-  <p><em>Video 3. Control remoto del LED enviando HIGH/LOW vía Bluetooth.</em></p>
+  <p><em>Video 2. Control remoto del LED enviando HIGH/LOW vía Bluetooth.</em></p>
   <p>🔗 <a href="https://iberopuebla-my.sharepoint.com/:v:/g/personal/203032_iberopuebla_mx/EVpBvpzdxWZOh_eSXIGTQ-YB0Rgq_y67O0ogH8LVx4Zd5Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=S0CvNi">Ver video</a></p>
 </div>
