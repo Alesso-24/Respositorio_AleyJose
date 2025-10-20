@@ -182,11 +182,13 @@ void loop() {
 }
 ---
 
-📊 6) Resultados
-Etapa	Descripción	Resultado
-1️⃣ Blink	Control temporizado del LED	✅ Precisión de 2 s por ciclo
-2️⃣ Botón	Control físico con entrada digital	✅ Funcionamiento estable
-3️⃣ Bluetooth	Control remoto vía comandos	✅ Comunicación correcta
+## **📊 6) Resultados**
+
+| Etapa | Descripción | Resultado |
+| :--- | :--- | :--- |
+| **1️⃣ Blink** | Control temporizado del LED | ✅ Precisión de 2 s por ciclo |
+| **2️⃣ Botón** | Control físico con entrada digital | ✅ Funcionamiento estable |
+| **3️⃣ Bluetooth** | Control remoto vía comandos | ✅ Comunicación correcta |
 
 🔍 Se demostró la capacidad de la ESP32 para manejar tareas de temporización, entradas digitales y comunicación inalámbrica mediante Bluetooth.
 
