@@ -85,8 +85,8 @@ Cargar cada uno de los tres códigos de forma individual para verificar la funci
 
 ## 💻 5.1) Código de Programación
 
-### 🔹 Etapa 1 – Control de Dirección Simple (Adelante y Atrás) 🔄
-```cpp
+### 🔹**Etapa 1 – Control de Dirección Simple (Adelante y Atrás) 🔄**
+
 // Pines de control para el Motor
 const int IN1 = 25; // Dirección 1
 const int IN2 = 26; // Dirección 2
@@ -118,7 +118,11 @@ void loop() {
   delay(1000);
 }
 
-Etapa 2 – Control de Velocidad Fija con PWM (50%) ⚡
+
+
+
+### 🔹**Etapa 2 – Control de Velocidad Fija con PWM (50%) ⚡**
+
 // Parámetros PWM de la ESP32
 const int freq = 5000;      // Frecuencia PWM (5 kHz)
 const int ledChannel = 0;   // Canal PWM a usar (0-15)
@@ -150,7 +154,10 @@ void loop() {
   delay(1000);
 }
 
-🔹 Etapa 3 – Secuencia de Aceleración y Desaceleración Gradual ⬆️⬇️
+
+
+### 🔹**Etapa 3 – Secuencia de Aceleración y Desaceleración Gradual ⬆️⬇️**
+
 // Pines y parámetros PWM
 const int IN1 = 25;
 const int IN2 = 26;
@@ -184,16 +191,33 @@ void loop() {
   delay(4000); // Motor detenido por 4s antes de repetir
 }
 
-📊 6) Resultados
-Etapa	Descripción	Resultado
-1️⃣ Dirección	Control del sentido de giro (adelante/atrás)	✅ Reversibilidad lograda
-2️⃣ Velocidad Fija	Control de velocidad con PWM	✅ Velocidad estable al 50%
-3️⃣ Acel./Desac.	Secuencia de máxima velocidad seguida de desaceleración gradual	✅ Transición de velocidad controlada
 
-🔍 Se demostró el control total sobre la potencia (velocidad) y el sentido de giro (dirección) de un motor DC, validando el uso del módulo L298N como interfaz de potencia.
+## **📊 6) Resultados**
 
-🎥 7) Videos de Funcionamiento
-▶️ Video 1 – Control de Dirección y Velocidad Fija
-<div align="center"> <iframe src="[ENLACE_VIDEO_DIRECCION]" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="video_direccion.mp4"></iframe> <p><em>Video 1. Demostración de cambio de sentido de giro (adelante/atrás) y velocidad constante.</em></p> <p>🔗 <a href="[ENLACE_VIDEO_DIRECCION]">Ver video</a></p> </div>
-▶️ Video 2 – Secuencia de Aceleración y Desaceleración
-<div align="center"> <iframe src="[ENLACE_VIDEO_VELOCIDAD]" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="video_velocidad.mp4"></iframe> <p><em>Video 2. Observación de la aceleración a velocidad máxima y el frenado progresivo con el ciclo 'for'.</em></p> <p>🔗 <a href="[ENLACE_VIDEO_VELOCIDAD]">Ver video</a></p> </div> ```
+| Etapa | Descripción | Resultado |
+| :--- | :--- | :--- |
+| **1️⃣ Dirección** | Control del sentido de giro (adelante/atrás) | ✅ Reversibilidad lograda |
+| **2️⃣ Velocidad Fija** | Control de velocidad con PWM | ✅ Velocidad estable al 50% |
+| **3️⃣ Acel./Desac.** | Secuencia de máxima velocidad seguida de desaceleración gradual | ✅ Transición de velocidad controlada |
+
+🔍 Se demostró el **control total** sobre la potencia (**velocidad**) y el sentido de giro (**dirección**) de un motor DC, validando el uso del módulo **L298N** como interfaz de potencia.
+
+---
+
+## 🎥 7) Videos de Funcionamiento
+
+### ▶️ Video 1 – Control de Dirección y Velocidad Fija
+
+<div align="center">
+  <iframe src="[ENLACE_VIDEO_DIRECCION]" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="video_direccion.mp4"></iframe>
+  <p><em>Video 1. Demostración de cambio de sentido de giro (adelante/atrás) y velocidad constante.</em></p>
+  <p>🔗 <a href="[ENLACE_VIDEO_DIRECCION]">Ver video</a></p>
+</div>
+
+### ▶️ Video 2 – Secuencia de Aceleración y Desaceleración
+
+<div align="center">
+  <iframe src="[ENLACE_VIDEO_VELOCIDAD]" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="video_velocidad.mp4"></iframe>
+  <p><em>Video 2. Observación de la aceleración a velocidad máxima y el frenado progresivo con el ciclo 'for'.</em></p>
+  <p>🔗 <a href="[ENLACE_VIDEO_VELOCIDAD]">Ver video</a></p>
+</div>
