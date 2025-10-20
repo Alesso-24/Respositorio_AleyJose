@@ -114,8 +114,25 @@ void loop() {
 🔹 Etapa 2 – Control del LED con Botón 🔘
 El LED se enciende mientras el botón está siendo presionado.
 
-!!! tip "Consejo"
-    Este proyecto sirve como introducción al uso del 555 como generador de señales periódicas.
+// Definición de pines
+const int ledPin = 2;    // LED en GPIO 2
+const int buttonPin = 4; // Botón en GPIO 4
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+  // El botón está conectado con una resistencia pull-down externa
+  pinMode(buttonPin, INPUT); 
+}
+
+void loop() {
+  // Leer el estado del botón (HIGH al presionar)
+  int buttonState = digitalRead(buttonPin);
+
+  // Escribir el estado del botón directamente al LED
+  digitalWrite(ledPin, buttonState);
+
+  delay(10); // Anti-rebote simple
+}
 
 ---
 
@@ -124,12 +141,45 @@ El LED se enciende mientras el botón está siendo presionado.
 🔹 Etapa 3 – Control del LED por Bluetooth Serial 📲
 El LED se controla enviando el texto HIGH o LOW desde una app Bluetooth.
 
-/***********************************************************************
- *  LED + Bluetooth Serial – ESP32
- *  Descripción: Control remoto del LED mediante comandos Bluetooth.
- ***********************************************************************/
-!!! tip "Consejo"
-    Este proyecto sirve como introducción al uso del 555 como generador de señales periódicas.
+BluetoothSerial SerialBT;
+const int ledPin = 2;
+String message = ""; // Buffer para el comando
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(ledPin, OUTPUT);
+
+  SerialBT.begin("ESP32_Control_LED"); // Nombre del dispositivo BT
+  Serial.println("Bluetooth iniciado.");
+}
+
+void loop() {
+  if (SerialBT.available()) {
+    char incomingChar = SerialBT.read();
+
+    if (incomingChar != '\n') {
+      message += incomingChar;
+    } else {
+      message.trim();
+      message.toUpperCase();
+
+      Serial.print("Comando recibido: ");
+      Serial.println(message);
+
+      if (message == "HIGH") {
+        digitalWrite(ledPin, HIGH);
+        SerialBT.println("✅ LED Encendido");
+      } else if (message == "LOW") {
+        digitalWrite(ledPin, LOW);
+        SerialBT.println("❌ LED Apagado");
+      } else {
+        SerialBT.println("⚠️ Comando inválido. Use HIGH o LOW.");
+      }
+      message = "";
+    }
+  }
+  delay(20);
+}
 
 ---
 
