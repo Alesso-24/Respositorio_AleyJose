@@ -111,7 +111,7 @@ void loop() {
 
 
 
-🔹 Etapa 2 – Control del LED con Botón 🔘
+###🔹 Etapa 2 – Control del LED con Botón 🔘
 El LED se enciende mientras el botón está siendo presionado.
 
 // Definición de pines
@@ -138,7 +138,7 @@ void loop() {
 
 
 
-🔹 Etapa 3 – Control del LED por Bluetooth Serial 📲
+###🔹 Etapa 3 – Control del LED por Bluetooth Serial 📲
 El LED se controla enviando el texto HIGH o LOW desde una app Bluetooth.
 
 BluetoothSerial SerialBT;
@@ -180,7 +180,6 @@ void loop() {
   }
   delay(20);
 }
-
 ---
 
 📊 6) Resultados
