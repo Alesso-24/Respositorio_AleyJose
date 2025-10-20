@@ -10,7 +10,7 @@
 - **Nombre del proyecto:** Oscilador Astable con 555  
 - **Equipo / Autor(es):** Alessandro Reyes, Jose Góngora, Sebastián Cortez  
 - **Curso / Asignatura:** Electrónica / Circuitos Digitales  
-- **Fecha:** 05/09/2025 (viernes pasado)  
+- **Fecha:** 05/09/2025 
 - **Descripción breve:** Se diseñó un circuito con el temporizador 555 en modo astable para encender y apagar un LED cada 3–5 segundos, armado de forma física y documentado con evidencia en fotos y video.
 
 !!! tip "Consejo"
