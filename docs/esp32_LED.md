@@ -154,7 +154,7 @@ void setup() {
 }
 
 void loop() {
-  if (SerialBT.available()) {
+if (SerialBT.available()) {
     char incomingChar = SerialBT.read();
 
     if (incomingChar != '\n') {
