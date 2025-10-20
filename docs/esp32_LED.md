@@ -92,12 +92,12 @@ Aplicar los conceptos básicos de programación de microcontroladores para contr
 ### 🔹 **Etapa 1 – LED Parpadeante Simple (Blink) ⏳**
 
 !!! tip "Consejo"
-    // Definición del pin del LED
-const int ledPin = 2; // Usamos el GPIO 2
-
-void setup() {
-  pinMode(ledPin, OUTPUT);
-}
+!!!    // Definición del pin del LED
+!!! const int ledPin = 2; // Usamos el GPIO 2
+!!!
+!!! void setup() {
+!!!  pinMode(ledPin, OUTPUT);
+!!! }
 
 void loop() {
   // Enciende el LED
