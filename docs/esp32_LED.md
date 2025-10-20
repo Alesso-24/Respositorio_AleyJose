@@ -91,42 +91,20 @@ Aplicar los conceptos básicos de programación de microcontroladores para contr
 
 ### 🔹 **Etapa 1 – LED Parpadeante Simple (Blink) ⏳**
 
-> El LED se enciende y apaga cada segundo.
-/***********************************************************************
- *  LED Blink – ESP32
- *  Descripción: Enciende y apaga el LED cada 1 segundo.
- ***********************************************************************/
-const int ledPin = 2; // GPIO 2
+!!! tip "Consejo"
+    Este proyecto sirve como introducción al uso del 555 como generador de señales periódicas.
 
-void setup() {
-  pinMode(ledPin, OUTPUT);
-}
+---
 
-void loop() {
-  digitalWrite(ledPin, HIGH);
-  delay(1000); // Espera 1 segundo
-  digitalWrite(ledPin, LOW);
-  delay(1000); // Espera 1 segundo
-}
+
+
 🔹 Etapa 2 – Control del LED con Botón 🔘
 El LED se enciende mientras el botón está siendo presionado.
 
-```markdown
-```cpp
-// Definición de pines
-const int ledPin = 2;    // LED en GPIO 2
-const int buttonPin = 4; // Botón en GPIO 4
+!!! tip "Consejo"
+    Este proyecto sirve como introducción al uso del 555 como generador de señales periódicas.
 
-void setup() {
-  pinMode(ledPin, OUTPUT);
-  pinMode(buttonPin, INPUT); // Botón con resistencia Pull-down
-}
-
-void loop() {
-  int buttonState = digitalRead(buttonPin);
-  digitalWrite(ledPin, buttonState);
-  delay(10); // Anti-rebote simple
-}
+---
 
 
 
@@ -137,52 +115,10 @@ El LED se controla enviando el texto HIGH o LOW desde una app Bluetooth.
  *  LED + Bluetooth Serial – ESP32
  *  Descripción: Control remoto del LED mediante comandos Bluetooth.
  ***********************************************************************/
-#include "BluetoothSerial.h"
+!!! tip "Consejo"
+    Este proyecto sirve como introducción al uso del 555 como generador de señales periódicas.
 
-#if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)
-#error Bluetooth no habilitado en esta placa!
-#endif
-
-BluetoothSerial SerialBT;
-const int ledPin = 2;
-String message = "";
-
-void setup() {
-  Serial.begin(115200);
-  pinMode(ledPin, OUTPUT);
-
-  SerialBT.begin("ESP32_Control_LED"); // Nombre del dispositivo BT
-  Serial.println("Bluetooth iniciado.");
-}
-
-void loop() {
-  if (SerialBT.available()) {
-    char incomingChar = SerialBT.read();
-
-    if (incomingChar != '\n') {
-      message += incomingChar;
-    } else {
-      message.trim();
-      message.toUpperCase();
-
-      Serial.print("Comando recibido: ");
-      Serial.println(message);
-
-      if (message == "HIGH") {
-        digitalWrite(ledPin, HIGH);
-        SerialBT.println("✅ LED Encendido");
-      } else if (message == "LOW") {
-        digitalWrite(ledPin, LOW);
-        SerialBT.println("❌ LED Apagado");
-      } else {
-        SerialBT.println("⚠️ Comando inválido. Use HIGH o LOW.");
-      }
-      message = "";
-    }
-  }
-  delay(20);
-}
-
+---
 
 📊 6) Resultados
 Etapa	Descripción	Resultado
