@@ -92,7 +92,22 @@ Aplicar los conceptos básicos de programación de microcontroladores para contr
 ### 🔹 **Etapa 1 – LED Parpadeante Simple (Blink) ⏳**
 
 !!! tip "Consejo"
-    Este proyecto sirve como introducción al uso del 555 como generador de señales periódicas.
+    // Definición del pin del LED
+const int ledPin = 2; // Usamos el GPIO 2
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  // Enciende el LED
+  digitalWrite(ledPin, HIGH);
+  delay(1000); // Espera 1 segundo
+
+  // Apaga el LED
+  digitalWrite(ledPin, LOW);
+  delay(1000); // Espera 1 segundo
+}
 
 ---
 
