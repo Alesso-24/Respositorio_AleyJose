@@ -289,10 +289,10 @@ BAUD   = 115200
 ser = None
 try:
     ser = serial.Serial(PUERTO, BAUD, timeout=0.1, write_timeout=0)
-    print(f"✅ CONECTADO A {PUERTO}")
+    print(f"CONECTADO A {PUERTO}")
     time.sleep(2)
 except Exception as e:
-    print(f"❌ Error Bluetooth: {e}")
+    print(f"Error Bluetooth: {e}")
  
 # CÁMARA (Índice 1)
 cap = cv2.VideoCapture(2, cv2.CAP_DSHOW)
