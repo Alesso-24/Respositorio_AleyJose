@@ -155,12 +155,12 @@
  
 ### 2. Posteriormente a esto, el brazo grueso de igual manera debe ser insertado a presion en el servomotor, hasta que ambas piezas se muevan simultaneamente, de igual manera es posible utilizar tornillos si llega a haber movimiento inesperado
  
-![Diagrama del sistema](recursos/imgs/IMG2.jpeg)
+![Diagrama del sistema](recursos/imgs/IMG2.jpg)
 #### (Segunda Ilustracion de guia para ensamblaje)
  
 ### 3. Una vez colocado el brazo grueso, colocar el Brazo delgado Paralelo a la pieza, y utilizando 3 arandelas, colocarlas entre los brazos, para posteriormente insertar una tornillo y fijarlo con una tuerca para que no haya inestabilidad en el movimiento de los brazos.
  
-![Diagrama del sistema](recursos/imgs/IMG3.jpeg)
+![Diagrama del sistema](recursos/imgs/IMG3.jpg)
 #### (Tercera Ilustracion de guia para ensamblaje)
  
 ### 4. Finalmente, inserta el cilindro en la parte superior de el brazo delgado, y asegurate de que esta pieza vaya pegada a tu base plana
