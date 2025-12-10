@@ -1,0 +1,1239 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../esp32_LED/">
+      
+      
+        <link rel="next" href="../plataforma/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>📚 Documentación de la Práctica – Control de Motor DC con ESP32 (PWM y Puente H) - Alessandro & Compeán</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentacion-de-la-practica-control-de-motor-dc-con-esp32-pwm-y-puente-h" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Alessandro &amp; Compeán" class="md-header__button md-logo" aria-label="Alessandro & Compeán" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Alessandro & Compeán
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📚 Documentación de la Práctica – Control de Motor DC con ESP32 (PWM y Puente H)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Alessandro &amp; Compeán" class="md-nav__button md-logo" aria-label="Alessandro & Compeán" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Alessandro & Compeán
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ingeniería Mecatrónica - Documentación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../555/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📚 Documentación de la Práctica – Temporizador 555 en modo Astable
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../esp32_LED/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📚 Documentación de la Práctica – Control de LED con ESP32 (Múltiples Modos)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📚 Documentación de la Práctica – Control de Motor DC con ESP32 (PWM y Puente H)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📚 Documentación de la Práctica – Control de Motor DC con ESP32 (PWM y Puente H)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#proyecto-academico-de-introduccion-a-la-mecatronica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 Proyecto académico de introducción a la mecatrónica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-resumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧭 1) Resumen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 2) Objetivos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 2) Objetivos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#especificos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Específicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-alcance-y-exclusiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📋 3) Alcance y Exclusiones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚙️ 4) Requisitos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚙️ 4) Requisitos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧰 Hardware
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conocimientos-previos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📘 Conocimientos previos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-procedimiento-e-instalacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔧 5) Procedimiento e Instalación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 5) Procedimiento e Instalación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#montaje-del-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Montaje del Hardware
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cableado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cableado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carga-secuencial-de-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Carga secuencial de Código
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#51-codigo-de-programacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 5.1) Código de Programación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 5.1) Código de Programación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etapa-1-control-de-direccion-simple-adelante-y-atras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔹Etapa 1 – Control de Dirección Simple (Adelante y Atrás) 🔄
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etapa-2-control-de-velocidad-fija-con-pwm-50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔹Etapa 2 – Control de Velocidad Fija con PWM (50%) ⚡
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etapa-3-secuencia-de-aceleracion-y-desaceleracion-gradual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔹Etapa 3 – Secuencia de Aceleración y Desaceleración Gradual ⬆️⬇️
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 6) Resultados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-videos-de-funcionamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎥 7) Videos de Funcionamiento
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎥 7) Videos de Funcionamiento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#video-1-aprendiendo-a-usar-un-motor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ▶️ Video 1 – Aprendiendo a usar un motor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#video-2-secuencia-de-aceleracion-y-desaceleracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ▶️ Video 2 – Secuencia de Aceleración y Desaceleración
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plataforma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📚 Documentación del Proyecto Final
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#proyecto-academico-de-introduccion-a-la-mecatronica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 Proyecto académico de introducción a la mecatrónica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-resumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧭 1) Resumen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 2) Objetivos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 2) Objetivos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#especificos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Específicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-alcance-y-exclusiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📋 3) Alcance y Exclusiones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚙️ 4) Requisitos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚙️ 4) Requisitos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧰 Hardware
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conocimientos-previos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📘 Conocimientos previos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-procedimiento-e-instalacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔧 5) Procedimiento e Instalación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 5) Procedimiento e Instalación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#montaje-del-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Montaje del Hardware
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cableado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cableado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carga-secuencial-de-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Carga secuencial de Código
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#51-codigo-de-programacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 5.1) Código de Programación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 5.1) Código de Programación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etapa-1-control-de-direccion-simple-adelante-y-atras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔹Etapa 1 – Control de Dirección Simple (Adelante y Atrás) 🔄
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etapa-2-control-de-velocidad-fija-con-pwm-50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔹Etapa 2 – Control de Velocidad Fija con PWM (50%) ⚡
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etapa-3-secuencia-de-aceleracion-y-desaceleracion-gradual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔹Etapa 3 – Secuencia de Aceleración y Desaceleración Gradual ⬆️⬇️
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 6) Resultados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-videos-de-funcionamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎥 7) Videos de Funcionamiento
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎥 7) Videos de Funcionamiento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#video-1-aprendiendo-a-usar-un-motor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ▶️ Video 1 – Aprendiendo a usar un motor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#video-2-secuencia-de-aceleracion-y-desaceleracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ▶️ Video 2 – Secuencia de Aceleración y Desaceleración
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="documentacion-de-la-practica-control-de-motor-dc-con-esp32-pwm-y-puente-h">📚 Documentación de la Práctica – Control de Motor DC con ESP32 (PWM y Puente H)</h1>
+<h2 id="proyecto-academico-de-introduccion-a-la-mecatronica">🧠 Proyecto académico de introducción a la mecatrónica</h2>
+<p><strong>Implementación de la placa ESP32 para el control de la dirección y velocidad de un motor DC utilizando el controlador L298N.</strong></p>
+<hr />
+<h2 id="1-resumen">🧭 1) Resumen</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Elemento</strong></th>
+<th><strong>Descripción</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nombre del proyecto:</strong></td>
+<td>Control de Motor DC con L298N y ESP32 (Velocidad y Dirección)</td>
+</tr>
+<tr>
+<td><strong>Equipo / Autor(es):</strong></td>
+<td>Alessandro Reyes, José Compeán</td>
+</tr>
+<tr>
+<td><strong>Curso / Asignatura:</strong></td>
+<td>Introducción a la Mecatrónica / Programación de Microcontroladores</td>
+</tr>
+<tr>
+<td><strong>Fecha:</strong></td>
+<td>19 sep 2025</td>
+</tr>
+<tr>
+<td><strong>Descripción breve:</strong></td>
+<td>Se exploraron las funcionalidades de la ESP32 para controlar actuadores de mayor potencia. Se implementó el módulo L298N para manejar un motor DC, aplicando señales digitales (dirección) y PWM (velocidad) para realizar cambios de sentido y transiciones de aceleración/desaceleración.</td>
+</tr>
+</tbody>
+</table>
+<p>💡 <strong>Consejo:</strong><br />
+Esta práctica es crucial para entender el uso de puentes H (como el L298N) para el control de motores y la importancia del PWM para modular la potencia en la mecatrónica.</p>
+<hr />
+<h2 id="2-objetivos">🎯 2) Objetivos</h2>
+<h3 id="general"><strong>General</strong></h3>
+<p>Aplicar los conceptos de modulación por ancho de pulso (PWM) y el manejo de puentes H para lograr un control preciso sobre la velocidad y dirección de un motor DC.</p>
+<h3 id="especificos"><strong>Específicos</strong></h3>
+<ul>
+<li>Configurar y utilizar los pines PWM de la ESP32 (LED Control).  </li>
+<li>Implementar el control de dirección del motor usando pines digitales.  </li>
+<li>Conectar y alimentar correctamente el módulo controlador L298N.  </li>
+<li>Desarrollar un programa que realice una secuencia de aceleración máxima seguida de desaceleración gradual usando un ciclo <code>for</code>.</li>
+</ul>
+<hr />
+<h2 id="3-alcance-y-exclusiones">📋 3) Alcance y Exclusiones</h2>
+<p><strong>Incluye:</strong>
+- Control de un solo motor DC (Motor A).<br />
+- Implementación de tres programas independientes cargados a la ESP32.<br />
+- Uso de PWM para control de velocidad.<br />
+- Uso de una fuente de alimentación externa para el L298N.<br />
+- Control de la dirección del motor.  </p>
+<p><strong>No incluye:</strong>
+- Uso de encoders para feedback de velocidad.<br />
+- Control de motores stepper o servomotores.<br />
+- Control remoto (Wi-Fi o Bluetooth).  </p>
+<hr />
+<h2 id="4-requisitos">⚙️ 4) Requisitos</h2>
+<h3 id="hardware">🧰 <strong>Hardware</strong></h3>
+<ul>
+<li>1 × Placa de desarrollo <strong>ESP32</strong>  </li>
+<li>1 × Módulo controlador de motores <strong>L298N (Puente H)</strong>  </li>
+<li>1 × Motor DC de baja potencia (ej. 5V–12V)  </li>
+<li>1 × Fuente de alimentación externa (ej. batería 9V o adaptador 12V)  </li>
+<li>1 × Protoboard y cables  </li>
+<li>Cables Jumper (al menos 6 M–F)  </li>
+</ul>
+<h3 id="conocimientos-previos">📘 <strong>Conocimientos previos</strong></h3>
+<ul>
+<li>Programación en <strong>C/C++ (Arduino IDE)</strong>  </li>
+<li>Manejo de entradas y salidas digitales (<strong>GPIO</strong>)  </li>
+<li>Conceptos de <strong>PWM</strong> y <em>duty cycle</em>  </li>
+<li>Principios de funcionamiento de un <strong>Puente H</strong>  </li>
+</ul>
+<hr />
+<h2 id="5-procedimiento-e-instalacion">🔧 5) Procedimiento e Instalación</h2>
+<h3 id="montaje-del-hardware"><strong>Montaje del Hardware</strong></h3>
+<ol>
+<li>Conectar la ESP32 al lado del motor A del L298N.  </li>
+<li>Utilizar la fuente externa para la alimentación del L298N (pin <strong>+12V</strong> y <strong>GND</strong>).  </li>
+</ol>
+<h3 id="cableado"><strong>Cableado</strong></h3>
+<ul>
+<li>Conectar los pines de dirección (<strong>IN1</strong>, <strong>IN2</strong>) a pines digitales de la ESP32 (ej. GPIO 25 y 26).  </li>
+<li>Conectar el pin de velocidad (<strong>ENA</strong>) a un pin con capacidad PWM de la ESP32 (ej. GPIO 27).  </li>
+<li>Conectar el motor a las salidas <strong>OUT1/OUT2</strong>.  </li>
+</ul>
+<h3 id="carga-secuencial-de-codigo"><strong>Carga secuencial de Código</strong></h3>
+<p>Cargar cada uno de los tres códigos de forma individual para verificar la funcionalidad (dirección, velocidad fija y aceleración/desaceleración).</p>
+<hr />
+<h2 id="51-codigo-de-programacion">💻 5.1) Código de Programación</h2>
+<h3 id="etapa-1-control-de-direccion-simple-adelante-y-atras">🔹<strong>Etapa 1 – Control de Dirección Simple (Adelante y Atrás) 🔄</strong></h3>
+<p>// Pines de control para el Motor
+const int IN1 = 25; // Dirección 1
+const int IN2 = 26; // Dirección 2</p>
+<p>void setup() {
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+}</p>
+<p>void loop() {
+  // 1. Gira hacia Adelante (HIGH, LOW)
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
+  delay(3000);</p>
+<p>// 2. Detiene el motor (LOW, LOW)
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, LOW);
+  delay(1000);</p>
+<p>// 3. Gira hacia Atrás (LOW, HIGH)
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, HIGH);
+  delay(3000);</p>
+<p>// 4. Detiene el motor (LOW, LOW)
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, LOW);
+  delay(1000);
+}</p>
+<h3 id="etapa-2-control-de-velocidad-fija-con-pwm-50">🔹<strong>Etapa 2 – Control de Velocidad Fija con PWM (50%) ⚡</strong></h3>
+<p>// Parámetros PWM de la ESP32
+const int freq = 5000;      // Frecuencia PWM (5 kHz)
+const int ledChannel = 0;   // Canal PWM a usar (0-15)
+const int resolution = 8;   // Resolución de 8 bits (0-255)
+const int dutyCycle = 127;  // 50% de velocidad (127 de 255)</p>
+<p>// Pines de control
+const int IN1 = 25; // Dirección 1
+const int IN2 = 26; // Dirección 2
+const int ENA = 27; // Habilitación/Velocidad (PWM)</p>
+<p>void setup() {
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);</p>
+<p>ledcSetup(ledChannel, freq, resolution);
+  ledcAttachPin(ENA, ledChannel);
+}</p>
+<p>void loop() {
+  // 1. Gira Adelante a 50% de velocidad
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
+  ledcWrite(ledChannel, dutyCycle);
+  delay(4000);</p>
+<p>// Detener el motor
+  ledcWrite(ledChannel, 0);
+  delay(1000);
+}</p>
+<h3 id="etapa-3-secuencia-de-aceleracion-y-desaceleracion-gradual">🔹<strong>Etapa 3 – Secuencia de Aceleración y Desaceleración Gradual ⬆️⬇️</strong></h3>
+<p>// Pines y parámetros PWM
+const int IN1 = 25;
+const int IN2 = 26;
+const int ENA = 27;
+const int ledChannel = 0;
+const int freq = 5000;
+const int resolution = 8; // Max dutyCycle = 255</p>
+<p>void setup() {
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+  ledcSetup(ledChannel, freq, resolution);
+  ledcAttachPin(ENA, ledChannel);</p>
+<p>// Establecer una dirección fija (Adelante)
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
+}</p>
+<p>void loop() {
+  // 1. Acelera rápidamente a velocidad máxima (100%)
+  ledcWrite(ledChannel, 255);
+  delay(3000);</p>
+<p>// 2. Desaceleración gradual (100% a 0)
+  for (int dutyCycle = 255; dutyCycle &gt;= 0; dutyCycle -= 5) {
+    ledcWrite(ledChannel, dutyCycle);
+    delay(50);
+  }</p>
+<p>delay(4000); // Motor detenido por 4s antes de repetir
+}</p>
+<h2 id="6-resultados"><strong>📊 6) Resultados</strong></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Etapa</th>
+<th style="text-align: left;">Descripción</th>
+<th style="text-align: left;">Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1️⃣ Dirección</strong></td>
+<td style="text-align: left;">Control del sentido de giro (adelante/atrás)</td>
+<td style="text-align: left;">✅ Reversibilidad lograda</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2️⃣ Velocidad Fija</strong></td>
+<td style="text-align: left;">Control de velocidad con PWM</td>
+<td style="text-align: left;">✅ Velocidad estable al 50%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3️⃣ Acel./Desac.</strong></td>
+<td style="text-align: left;">Secuencia de máxima velocidad seguida de desaceleración gradual</td>
+<td style="text-align: left;">✅ Transición de velocidad controlada</td>
+</tr>
+</tbody>
+</table>
+<p>🔍 Se demostró el <strong>control total</strong> sobre la potencia (<strong>velocidad</strong>) y el sentido de giro (<strong>dirección</strong>) de un motor DC, validando el uso del módulo <strong>L298N</strong> como interfaz de potencia.</p>
+<hr />
+<h2 id="7-videos-de-funcionamiento">🎥 7) Videos de Funcionamiento</h2>
+<h3 id="video-1-aprendiendo-a-usar-un-motor">▶️ Video 1 – Aprendiendo a usar un motor</h3>
+<div align="center">
+  <iframe src="https://iberopuebla-my.sharepoint.com/personal/203032_iberopuebla_mx/_layouts/15/embed.aspx?UniqueId=1f14984d-9644-4f31-82d3-270bf94e850e&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="motor_1.mp4"></iframe>
+  <p><em>Video 1. Aprendiendo a usar un motor DC.</em></p>
+  <p>🔗 <a href="https://iberopuebla-my.sharepoint.com/:v:/g/personal/203032_iberopuebla_mx/EU2YFB9EljFPgtMnC_lOhQ4BJORseFZcSpRQcb3aITU0og?e=jDeAxC&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">Ver video</a></p>
+</div>
+
+<h3 id="video-2-secuencia-de-aceleracion-y-desaceleracion">▶️ Video 2 – Secuencia de Aceleración y Desaceleración</h3>
+<div align="center">
+  <iframe src="https://iberopuebla-my.sharepoint.com/personal/203032_iberopuebla_mx/_layouts/15/embed.aspx?UniqueId=a40bd434-ffd9-49bb-b802-1c7b38d05265&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="motor_aumento_disminucion.mp4"></iframe>
+  <p><em>Video 2. Observación de la aceleración a velocidad máxima y el frenado progresivo con el ciclo 'for'.</em></p>
+  <p>🔗 <a href="https://iberopuebla-my.sharepoint.com/:v:/g/personal/203032_iberopuebla_mx/ETTUC6TZ_7tJuAIcezjQUmUB7DQc6xwFXwyhb8DLkVwr-Q?e=gUG3TL&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">Ver video</a></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.tooltips"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
