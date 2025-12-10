@@ -461,7 +461,5 @@ if ser: ser.close()
 ### Si todos los pasos se siguieron de la manera correcta, el resultado final deberia ser exacto o muy similar al del siguiente video.
  
 ### EVIDENCIA
- 
-### EVIDENCIA
  
 [Ver video de demostración](https://youtube.com/shorts/88SjHziDrIY?feature=share)
