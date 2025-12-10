@@ -1,5 +1,4 @@
 # 📚 Documentación del Proyecto Final 
-## Alessandro y Sebastían
  
 ---
  
