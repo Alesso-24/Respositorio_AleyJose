@@ -148,7 +148,7 @@
 ### Una vez cortadas e impresas las piezas, es momento de ensamblar
  
  
-![Diagrama del sistema](recursos/imgs/IMG1.jpeg)
+![Diagrama del sistema](recursos/imgs/IMG1.jpg)
 #### (primera ilustracion de guia para ensamblaje)
  
 ### 1. Como se puede observar en la imagen, cada uno de los servomotores deben ser insertados en la base plana, es importante que todos queden ajustados a presion, y en caso de que tengan complicaciones, es recomendable insertar pijas para mantenerlo fijo.
